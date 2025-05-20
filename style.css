@@ -18,7 +18,20 @@ h3 {
 
 /* Header */
 header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
   text-align: center;
+}
+header h1 {
+  margin: 0;
+}
+
+header nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Containers */
