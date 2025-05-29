@@ -34,24 +34,22 @@ nav ul {
 }
 
 header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 2rem;
+  /* Remove flexbox or override */
   text-align: center;
+  padding: 1rem 2rem;
 }
+
 header h1 {
   margin: 0;
 }
 
 header nav a {
-  margin-left: 1.5rem;
-  text-decoration: none;
-  color: inherit;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 /* Containers */
-div {
+.container {
   background-color: #eae2b7;
   margin: auto;
   width: 600px;
@@ -78,10 +76,6 @@ a:link {
 
 a:hover {
   color: #f77f00;
-}
-
-nav a {
-  padding-left: 20px;
 }
 
 /* Images */
