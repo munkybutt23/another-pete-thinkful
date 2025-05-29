@@ -17,6 +17,22 @@ h3 {
 }
 
 /* Header */
+.header-content {
+  display: flex;
+  flex-direction: column; /* stack h1 and nav vertically */
+  align-items: center;    /* center horizontally */
+  gap: 1rem;              /* space between h1 and nav */
+}
+
+/* Also make sure the nav ul is horizontal */
+nav ul {
+  display: flex;
+  gap: 2rem;              /* spacing between nav links */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 header {
   display: flex;
   align-items: center;
