@@ -5,13 +5,144 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pete Thinkful</title>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-  />
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap" rel="stylesheet" />
+  <style>
+    /* Your CSS here */
+
+    body {
+      background-color: #eae2b7;
+      color: #003049;
+      font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
+      padding: 40px;
+      margin: 0;
+    }
+
+    /* Headings */
+    h1,
+    h2,
+    h3 {
+      font-family: "Playfair Display", Times, serif;
+      text-align: center;
+      margin-top: 0;
+    }
+
+    /* Header */
+    .header-content {
+      display: flex;
+      flex-direction: column; /* stack h1 and nav vertically */
+      align-items: center;    /* center horizontally */
+      gap: 1rem;              /* space between h1 and nav */
+      max-width: 600px;
+      margin: 0 auto 40px;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 2rem;              /* spacing between nav links */
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: inherit;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    nav a:hover {
+      color: #f77f00;
+    }
+
+    /* Containers */
+    .container {
+      background-color: #eae2b7;
+      margin: auto;
+      max-width: 600px;
+      padding: 0 20px;
+    }
+
+    article {
+      padding: 50px 0;
+    }
+
+    article div {
+      width: 100%;
+    }
+
+    p {
+      line-height: 1.5;
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+
+    /* About section */
+    .about-intro {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 2rem;
+      text-align: left;
+      flex-wrap: wrap;
+    }
+
+    .about-intro > div:first-child {
+      flex-shrink: 0;
+      text-align: center;
+    }
+
+    .about-intro .about-text {
+      text-align: left;
+      margin: 0;
+      max-width: 400px;
+    }
+
+    .about-intro h3 {
+      text-align: center;
+      width: 100%;
+      margin-top: 0;
+    }
+
+    .about-background {
+      margin-top: 2rem;
+      text-align: left;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Images */
+    img {
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .image-circle {
+      border: 2px solid #003049;
+      border-radius: 50%;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    /* Other page elements */
+    hr {
+      border: 1px solid black;
+      margin: 40px 0;
+    }
+  </style>
 </head>
 <body>
+
   <header>
     <div class="header-content">
       <h1>Pete Thinkful | Artist</h1>
@@ -27,14 +158,13 @@
 
   <main>
     <div class="container">
-      <!-- About section -->
       <article id="about">
         <h2>About</h2>
         <section class="about-intro">
           <div>
             <img
               class="image-circle"
-              src="images/pete-thinkful.png"
+              src="https://via.placeholder.com/200"
               alt="Pete Thinkful"
             />
           </div>
@@ -69,12 +199,64 @@
         </section>
       </article>
 
-      <!-- rest of your content ... -->
+      <hr />
+
+      <article id="portfolio">
+        <h2>Portfolio</h2>
+
+        <section>
+          <h3>Abstract Red</h3>
+          <div>
+            <img src="https://via.placeholder.com/200x150/ff0000/fff?text=Abstract+Red" alt="Abstract Red" />
+          </div>
+          <p>
+            Vaporware wayfarers heirloom neutra disrupt. Activated charcoal
+            waistcoat scenester hell of.
+          </p>
+        </section>
+
+        <section>
+          <h3>Spiral Zany</h3>
+          <div>
+            <img src="https://via.placeholder.com/200x150/00ff00/fff?text=Spiral+Zany" alt="Spiral Zany" />
+          </div>
+          <p>
+            Sriracha portland taxidermy cronut messenger bag, vegan
+            distillery. Vaporware kickstarter air plant mumblecore food truck.
+          </p>
+        </section>
+
+        <section>
+          <h3>Melted Rainbow</h3>
+          <div>
+            <img src="https://via.placeholder.com/200x150/0000ff/fff?text=Melted+Rainbow" alt="Melted Rainbow" />
+          </div>
+          <p>
+            Edison bulb single-origin coffee snackwave, actually ennui
+            locavore shabby chic forage.
+          </p>
+        </section>
+      </article>
+
+      <hr />
+
+      <article id="contact">
+        <h2>Contact</h2>
+        <p>
+          I'd love to hear from you! Please feel free to contact or follow me:
+        </p>
+        <ol>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Pinterest</a></li>
+        </ol>
+      </article>
     </div>
   </main>
 
   <footer>
     <p>© Pete Thinkful. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
